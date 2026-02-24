@@ -1,55 +1,43 @@
 import { motion } from "framer-motion";
 
+// 🔹 Back-End
+import nodejs from "@/assets/tech/nodejs.png";
+import python from "@/assets/tech/python.png";
+import go from "@/assets/tech/go.png";
+
+// 🔹 Database
+import redis from "@/assets/tech/redis.png";
+import mongodb from "@/assets/tech/mongodb.png";
+import elasticsearch from "@/assets/tech/elasticsearch.png";
+
+// 🔹 Mobile
+import swift from "@/assets/tech/swift.png";
+import java from "@/assets/tech/java.png";
+import kotlin from "@/assets/tech/kotlin.png";
+
 const techStack = [
   {
     category: "Back-End",
     technologies: [
-      {
-        name: "Node.js",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
-      },
-      {
-        name: "Python",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
-      },
-      {
-        name: "Go",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
-      },
+      { name: "Node.js", logo: nodejs },
+      { name: "Python", logo: python },
+      { name: "Go", logo: go },
     ],
   },
   {
     category: "Database",
     technologies: [
-      {
-        name: "Redis",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original-wordmark.svg",
-      },
-      {
-        name: "MongoDB",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-      },
-      {
-        name: "Elasticsearch",
-        logo: "https://cdn.simpleicons.org/elasticsearch/005571",
-      },
+      { name: "Redis", logo: redis },
+      { name: "MongoDB", logo: mongodb },
+      { name: "Elasticsearch", logo: elasticsearch },
     ],
   },
   {
     category: "Mobile Apps",
     technologies: [
-      {
-        name: "Swift",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
-      },
-      {
-        name: "Java",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
-      },
-      {
-        name: "Kotlin",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-      },
+      { name: "Swift", logo: swift },
+      { name: "Java", logo: java },
+      { name: "Kotlin", logo: kotlin },
     ],
   },
 ];
