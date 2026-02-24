@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 
-// 🔹 Back-End
+// Back-End
 import nodejs from "@/assets/tech/nodejs.png";
 import python from "@/assets/tech/python.png";
 import go from "@/assets/tech/go.png";
 
-// 🔹 Database
+// Database
 import redis from "@/assets/tech/redis.png";
 import mongodb from "@/assets/tech/mongodb.png";
 import elasticsearch from "@/assets/tech/elasticsearch.png";
 
-// 🔹 Mobile
+// Mobile
 import swift from "@/assets/tech/swift.png";
 import java from "@/assets/tech/java.png";
 import kotlin from "@/assets/tech/kotlin.png";
@@ -27,8 +27,8 @@ const techStack = [
   {
     category: "Database",
     technologies: [
-      { name: "Redis", logo: redis },
       { name: "MongoDB", logo: mongodb },
+      { name: "Redis", logo: redis },
       { name: "Elasticsearch", logo: elasticsearch },
     ],
   },
@@ -44,50 +44,50 @@ const techStack = [
 
 const TechCustomization = () => {
   return (
-    <section className="py-20 lg:py-24 bg-[#eeeeee]">
-      <div className="max-w-[1700px] mx-auto px-4 lg:px-10">
+    <section className="py-14 bg-[#efefef]">
+      <div className="max-w-[1500px] mx-auto px-6">
 
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-12"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Tech Stack
           </h2>
-          <p className="text-lg md:text-xl text-foreground/65">
+          <p className="text-base md:text-lg text-gray-600">
             Cutting-edge technologies powering our dating app platform
           </p>
         </motion.div>
 
         {/* Cards */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-6">
           {techStack.map((item, i) => (
             <motion.div
               key={item.category}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-              className="relative rounded-3xl bg-[#f5f5f5] border border-white/80 shadow-[0_4px_20px_rgba(0,0,0,0.04)] px-8 md:px-10 pt-16 pb-10 min-h-[260px] flex items-center"
+              transition={{ delay: i * 0.07 }}
+              className="relative rounded-2xl bg-[#f6f6f6] border border-white shadow-sm px-6 pt-12 pb-8 min-h-[190px]"
             >
-              {/* Category Badge */}
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 min-w-[230px] px-8 py-3 rounded-[22px] bg-[#e9e9e9] border border-white/90">
-                <h3 className="text-[22px] md:text-[24px] font-semibold text-center text-foreground leading-none whitespace-nowrap">
+              {/* Badge */}
+              <div className="absolute -top-5 left-1/2 -translate-x-1/2 px-6 py-2 rounded-full bg-[#e9e9e9] border border-white">
+                <h3 className="text-lg font-semibold whitespace-nowrap">
                   {item.category}
                 </h3>
               </div>
 
               {/* Logos */}
-              <div className="flex items-center justify-center gap-10 md:gap-14 w-full">
+              <div className="flex items-center justify-between gap-6">
                 {item.technologies.map((tech) => (
                   <img
                     key={tech.name}
                     src={tech.logo}
                     alt={tech.name}
-                    className="h-14 md:h-16 w-auto object-contain"
+                    className="h-10 md:h-12 w-auto object-contain"
                     loading="lazy"
                   />
                 ))}
