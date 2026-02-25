@@ -24,10 +24,9 @@ const Index = () => {
       <HeroSection />
       <ClientsSection />
       <WhyWhiteLabel />
-      <InlineCTA title="Want to See It in Action?" subtitle="Get a personalized demo of your own branded dating platform." />
       <PlatformFeatures />
       <AISection />
-      <InlineCTA title="Ready to Build Your Dating App?" subtitle="Talk to our team about your requirements and timeline." />
+      <InlineCTA title="Launch Your Dating App in 45 Days" subtitle="Build, customize, and go live with your own white label dating app without long development cycles." />
       <MonetizationSection />
       <WebPlatformSection />
       <HowItWorks />
