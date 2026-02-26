@@ -1,6 +1,7 @@
-import webplatformImg from "@/assets/images/web-platform.png";
-import agencyportalImg from "@/assets/images/agency-portal.png";
-import admimdashboardImg from "@/assets/images/admin-dashboard.png";
+import webPlatformImg from "@/assets/web-platform.png";
+import agencyPortalImg from "@/assets/agency-portal.png";
+import adminDashboardImg from "@/assets/admin-dashboard.png";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -17,7 +18,7 @@ const platforms = [
     title: "Progressive Web App — Full Dating Experience on Browser",
     desc: "A responsive, mobile-first web application that mirrors your native app experience. Users can discover matches, chat, and manage profiles from any browser.",
     icon: Globe,
-    image: "src/assets/web-platform.png",
+    image: webPlatformImg,
     features: [
       "Responsive design across all devices",
       "Real-time chat & notifications",
@@ -30,7 +31,7 @@ const platforms = [
     title: "Agency & Matchmaker Management Portal",
     desc: "A dedicated portal for professional matchmakers and agencies to manage clients, create curated introductions, and track success metrics.",
     icon: Users,
-    image: "src/assets/agency-portal.png",
+    image: agencyPortalImg,
     features: [
       "Client profile management",
       "Manual match curation",
@@ -43,7 +44,7 @@ const platforms = [
     title: "Powerful Admin Dashboard — Complete Platform Control",
     desc: "Full administrative control over users, content, subscriptions, analytics, and platform configuration.",
     icon: Settings,
-    image: "src/assets/admin-dashboard.png",
+    image: adminDashboardImg,
     features: [
       "User management & moderation",
       "Revenue & subscription analytics",
