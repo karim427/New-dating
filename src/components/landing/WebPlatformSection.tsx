@@ -1,6 +1,6 @@
-import webPlatformImg from "@/assets/images/web-platform.png";
-import agencyPortalImg from "@/assets/images/agency-portal.png";
-import adminDashboardImg from "@/assets/images/admin-dashboard.png";
+import webPlatformImg from "@src/assets/images/web-platform.png";
+import agencyPortalImg from "@src/assets/images/agency-portal.png";
+import adminDashboardImg from "@src/assets/images/admin-dashboard.png";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
