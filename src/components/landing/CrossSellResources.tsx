@@ -7,7 +7,7 @@ const similarProducts = [
   { icon: Layers, title: "Community Apps", desc: "Private community platforms for interest groups, alumni networks, and professional circles.", link: "https://appscrip.com/onlyfans-clone/" },
   { icon: ShoppingBag, title: "Marketplace Platforms", desc: "Multi-vendor marketplace apps for products, services, or digital goods.", link: "https://appscrip.com/multivendor-ecommerce-marketplace/"  },
   { icon: Users, title: "On-Demand Services", desc: "Service marketplace apps connecting customers with providers in real-time.", link: "https://appscrip.com/on-demand-services-marketplace/" },
-  { icon: MessageSquare, title: "Live Streaming Platform", desc: "Interactive live streaming apps with virtual gifting, chat, and audience tools.", link: "https://appscrip.com/live-streaming-platform" },
+  { icon: MessageSquare, title: "Live Streaming Platform", desc: "Interactive live streaming apps with virtual gifting, chat, and audience tools.", link: "https://appscrip.com/bigo-clone-script/" },
 ];
 
 const CrossSellResources = () => {

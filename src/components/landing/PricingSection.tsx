@@ -15,7 +15,7 @@ const rows: { feature: string; appscrip: Cell; custom: Cell }[] = [
   },
   {
     feature: "Cost to market",
-    appscrip: { type: "price", value: "$3,000 PM", label: "Starts at" },
+    appscrip: { type: "price", value: "$3,000 / PM", label: "Starts at" },
     custom: { type: "text", value: "$60,000 – $500K" },
   },
   {
