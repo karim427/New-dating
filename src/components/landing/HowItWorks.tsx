@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquare, Server, Paintbrush, Rocket, TrendingUp, Check } from "lucide-react";
+import { MessageSquare, Server, Paintbrush, Rocket, TrendingUp, Check, User } from "lucide-react";
 
 const steps = [
   {
     day: "Day 0",
     icon: MessageSquare,
     title: "Discovery Workshop",
-    desc: "We run a focused workshop to understand your requirements, existing workflows, and scale targets. You walk away with a detailed roadmap.",
-    bullets: ["Deep-dive into your business model", "Map your user flows & monetization", "Define customization requirements", "Propose execution roadmap & timeline"],
+    desc: "We run a focused workshop to understand your requirements, existing workflows, and scale targets. You walk away with a detailed roadmap for project execution and launch.",
+    bullets: ["Deep-dive into your operations", "Map your shipper & carrier workflows", "Define customization requirements", "Propose execution roadmap & timeline"],
     cardTitle: "Workshop Agenda",
     cardItems: [
       { label: "Business Model & Workflows", done: true },
@@ -21,56 +21,54 @@ const steps = [
     day: "Day 15",
     icon: Server,
     title: "Pre-Built App on Dedicated Servers",
-    desc: "Your white-label dating app is deployed on dedicated servers with your own database, APIs, and infrastructure — fully isolated and production-ready.",
+    desc: "Your production-ready white-label dating app is set up on dedicated servers. Start using the platform alongside your existing system to manage real operations immediately.",
     bullets: ["Dedicated server provisioning", "Database & API setup", "Push notifications & analytics", "CI/CD pipeline configuration"],
-    cardTitle: "Infrastructure Setup",
+    cardTitle: "Deployment Status",
     cardItems: [
-      { label: "Dedicated Servers", done: true },
-      { label: "Database Cluster", done: true },
-      { label: "API Gateway", num: 3 },
-      { label: "Monitoring & Alerts", num: 4 },
+      { label: "Server Setup", done: true },
+      { label: "App Deployment", done: true },
+      { label: "Data Migration", num: 3 },
+      { label: "User Setup", num: 4 },
     ],
   },
   {
     day: "Day 45",
     icon: Paintbrush,
     title: "Customize & White Label",
-    desc: "Apply your brand identity — logos, colors, fonts, and custom features. We tailor the app to match your vision and target audience.",
-    bullets: ["Brand identity & theme setup", "Custom feature configuration", "Localization & language support", "Payment gateway integration"],
-    cardTitle: "Customization Checklist",
+    desc: "We customize the platform to your exact workflows, apply your branding, and integrate with your existing tools. Your white-label dating app is ready to launch - your brand, your identity.",
+    bullets: ["Apply your brand colors, logo & identity", "Customize workflows to match operations", "Integrate with existing tools & systems", "User acceptance testing"],
+    cardTitle: "White Label Progress",
     cardItems: [
-      { label: "Brand & Theme Applied", done: true },
-      { label: "Features Configured", done: true },
-      { label: "Payments Integrated", num: 3 },
-      { label: "Localization Ready", num: 4 },
+      { label: "Brand Assets Applied", done: true },
+      { label: "Custom Workflows Configured", done: true },
+      { label: "Third-Party Integrations", done: true },
+      { label: "UAT Sign-Off", done: false },
     ],
   },
   {
     day: "Day 60",
     icon: Rocket,
     title: "Go Live on App Stores",
-    desc: "We handle the full submission process for both iOS and Android app stores, including compliance checks and launch optimization.",
-    bullets: ["App Store & Play Store submission", "Compliance & policy review", "ASO metadata optimization", "Launch day monitoring"],
-    cardTitle: "Launch Readiness",
+    desc: "Your branded native apps go live on the Apple App Store and Google Play Store. We handle the submission process and ensure a smooth launch.",
+    bullets: ["App Store submission & review", "Google Play Store publishing", "Launch monitoring & support", "Post-launch optimization"],
+    cardTitle: "Launch Checklist",
     cardItems: [
-      { label: "QA & Testing Complete", done: true },
-      { label: "Store Submissions", done: true },
-      { label: "Compliance Approved", num: 3 },
-      { label: "Go-Live Checklist", num: 4 },
-    ],
+      { label: "App Store ", done: true },
+      { label: "Play Store ", done: true },
+    ]
   },
   {
     day: "Day 60+",
     icon: TrendingUp,
     title: "AI-First Marketing & Growth",
     desc: "Post-launch, we help you grow with AI-powered marketing tools, user acquisition strategies, and continuous optimization.",
-    bullets: ["AI-driven user acquisition", "Engagement & retention campaigns", "Performance analytics dashboard", "Ongoing feature updates"],
-    cardTitle: "Growth Playbook",
+    bullets: ["AI-powered user acquisition campaigns", "Retention campaigns & re-engagement strategies", "Marketplace growth analytics", "Ongoing platform optimization"],
+    cardTitle: "Growth Metrics",
     cardItems: [
       { label: "User Acquisition Strategy", done: true },
       { label: "Retention Campaigns", done: true },
-      { label: "Analytics & Insights", num: 3 },
-      { label: "Feature Roadmap", num: 4 },
+      { label: "Analytics & Insights", done: true },
+      { label: "Feature Roadmap", done: true },
     ],
   },
 ];
@@ -88,13 +86,13 @@ const HowItWorks = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Your Journey</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">THE PROCESS</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mt-3 mb-5 text-foreground">
-            From Idea to Launch — Your Dating App{" "}
+          From Idea to Launch in{" "}
             <span className="gradient-text">in 60 Days</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            A structured process to turn your concept into a scalable, market-ready dating platform.
+          A proven process that takes you from idea to a live, branded dating app on the app stores - with AI-first marketing to grow your marketplace.
           </p>
         </motion.div>
 

@@ -10,7 +10,7 @@ const oldWay = [
 ];
 
 const appscrip = [
-  "Start for $3K",
+  "Start for $3K per month",
   "Launch in 60–90 days",
   "We handle everything",
   "Managed hosting & 24/7 support",
@@ -41,7 +41,7 @@ const WhyWhiteLabel = () => {
             viewport={{ once: true }}
             className="rounded-2xl border border-border bg-card p-8"
           >
-            <h3 className="text-xl font-bold text-foreground mb-6">The Old Way</h3>
+            <h3 className="text-xl font-bold text-foreground mb-6">The Traditional Way</h3>
             <ul className="space-y-4">
               {oldWay.map((item) => (
                 <li key={item} className="flex items-center gap-3">

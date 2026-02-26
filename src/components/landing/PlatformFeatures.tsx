@@ -311,12 +311,6 @@ const PlatformFeatures = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-16">
-          <Button variant="gradient" size="lg" className="rounded-full">
-            Explore All Features <ArrowRight className="w-4 h-4" />
-          </Button>
-        </div>
       </div>
     </section>
   );

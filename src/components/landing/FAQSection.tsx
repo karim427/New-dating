@@ -9,35 +9,31 @@ import {
 const faqs = [
   {
     q: "What is a white label dating app?",
-    a: "A white label dating app is a pre-built, fully functional dating platform that you can customize with your own branding, features, and design. Unlike SaaS solutions, you get complete source code ownership and IP rights, meaning you own the product entirely.",
+    a: "A white label dating app is a pre-built platform that businesses can customize with their own branding, features, and user experience. It allows you to launch your own dating app quickly without building everything from scratch, reducing development time and cost.",
   },
   {
-    q: "How much does a white label dating app cost?",
-    a: "The cost depends on your customization needs. Our white label solution starts at $3K, eliminating the need for building from scratch (which can cost $100K+). Contact us for a detailed quote based on your specific requirements.",
+    q: "How much does it cost to build a white label dating app?",
+    a: "Building a dating app from scratch typically costs between $25,000 and $80,000, depending on features, platforms, and integrations. Costs often increase further as new features are added during development.\n\nWith Appscrip, a white label dating app starts from $3000 per month. Since the core platform is already built, you can launch faster while focusing on customization, branding, and scaling your platform as you grow.",
   },
   {
-    q: "How quickly can I launch my dating app?",
-    a: "With our white label solution, you can launch in 60–90 days. This includes platform setup, customization, branding, QA testing, and app store submission.",
+    q: "How long does it take to launch a white label dating app?",
+    a: "Developing a dating app from scratch usually takes 3 to 6 months, including development, testing, and deployment. This often delays market entry and increases overall costs.\n\nAppscrip delivers a ready-to-launch white label dating app in 45 days. The platform is already tested, so the timeline focuses on customization, setup, and going live.",
   },
   {
-    q: "Can I build a niche dating app with this solution?",
-    a: "Absolutely. Our platform is designed for customization. Whether it's dating for seniors, professionals, specific religions, or communities — you can customize the matching logic, onboarding flow, profile fields, and monetization.",
+    q: "What features should a white label dating app have?",
+    a: "A white label dating app should include core features such as user profiles, swipe-based matching, chat, video calls, subscription plans, payment integration, and an admin dashboard. Advanced features like AI matchmaking, fraud detection, and personalization can improve user engagement and retention.",
   },
   {
-    q: "Do I own the complete source code?",
-    a: "Yes. You receive 100% of the source code with full IP ownership. You can modify, extend, and scale the platform independently. No ongoing license fees or vendor lock-in.",
+    q: "How do white label dating apps make money?",
+    a: "White label dating apps generate revenue through subscriptions, in-app purchases, ads, premium features, and virtual gifts. Monetization strategies can be customized based on your target audience and business model.",
   },
   {
-    q: "Can I raise funding with a white label dating app?",
-    a: "Yes. Since you own the complete source code and IP, your product is investor-ready. Full IP ownership significantly strengthens your funding position.",
+    q: "Is a white label dating app profitable?",
+    a: "Yes, a white label dating app can be highly profitable when combined with the right monetization strategy and user acquisition plan. With features like subscriptions, paid messaging, and virtual gifting, many dating platforms generate recurring revenue while keeping operational costs low.",
   },
   {
-    q: "What support do you provide after launch?",
-    a: "We provide comprehensive post-launch support including bug fixes, performance monitoring, app store updates, feature enhancements, and user activation strategy guidance.",
-  },
-  {
-    q: "What AI features are included?",
-    a: "Our platform includes AI matchmaking, AI content moderation, AI icebreakers, fraud detection, smart recommendations, and AI-powered analytics — all built-in and ready to use.",
+    q: "Why should I choose Appscrip for a white label dating app?",
+    a: "Appscrip offers a ready-to-launch white label dating app that can be deployed in 45 days, with full customization and ownership of the source code. This allows you to scale, modify, and operate your platform without dependency on a vendor.\n\nAppscrip has experience building large-scale marketplace platforms, giving you a proven foundation to launch and grow your dating app business.",
   },
 ];
 
@@ -75,7 +71,11 @@ const FAQSection = () => {
                   {faq.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-5 text-sm">
-                  {faq.a}
+                  {faq.a.split("\n\n").map((paragraph, j) => (
+                    <p key={j} className={j > 0 ? "mt-3" : ""}>
+                      {paragraph}
+                    </p>
+                  ))}
                 </AccordionContent>
               </AccordionItem>
             ))}

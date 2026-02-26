@@ -1,38 +1,34 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, Phone, Star } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
 import demoVideoThumbnail from "@/assets/images/demo-video-thumbnail.png";
-import { useRef } from "react";
+import { useState } from "react";
+
+const YOUTUBE_VIDEO_ID = "kGBoDLC7_0A";
+const YOUTUBE_EMBED_URL = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1`;
 
 const trustBadges = [
-"100% White Label",
+"100% Customizable",
 "Full Source Code Ownership",
 "Launch in Weeks"];
 
 
 const HeroSection = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start start", "end start"] });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen overflow-hidden" style={{ backgroundColor: 'hsl(340 100% 96%)' }}>
-      {/* Parallax background blobs */}
-      <motion.div style={{ y: bgY }} className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/30" />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/8 blur-[200px]" />
-        <div className="absolute top-10 left-10 w-[400px] h-[400px] rounded-full bg-primary/5 blur-[120px]" />
-        <div className="absolute bottom-20 right-10 w-[300px] h-[300px] rounded-full bg-primary/6 blur-[100px]" />
-      </motion.div>
+    <section className="relative min-h-screen overflow-x-hidden overflow-y-visible" style={{ backgroundColor: 'hsl(340 100% 96%)' }}>
+      {/* Background blobs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/30" />
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/8 blur-[200px]" />
+          <div className="absolute top-10 left-10 w-[400px] h-[400px] rounded-full bg-primary/5 blur-[120px]" />
+          <div className="absolute bottom-20 right-10 w-[300px] h-[300px] rounded-full bg-primary/6 blur-[100px]" />
+        </div>
+      </div>
 
-      <motion.div style={{ y: contentY, opacity }} className="relative container mx-auto px-4 lg:px-8 pt-28 pb-14">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="text-center max-w-5xl mx-auto">
+      <div className="relative container mx-auto px-4 lg:px-8 pt-28 pb-14">
+        <div className="text-center max-w-5xl mx-auto">
 
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary/10 border border-primary/20 mb-10">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -40,7 +36,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] mb-8 text-section-dark-foreground tracking-tight">
-            Launch Your <span className="gradient-text italic">AI-Powered</span>
+            Launch Your <span className="gradient-text">AI-Powered</span>
             <br className="hidden md:block" />
             White Label Dating App in 60 Days
           </h1>
@@ -125,25 +121,42 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        {/* Hero Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="max-w-5xl mx-auto">
+        {/* Hero Video - thumbnail on top, click to play */}
+        <div className="max-w-5xl mx-auto">
 
-          <div className="relative group cursor-pointer rounded-2xl overflow-hidden border border-border/50">
-            <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl group-hover:bg-primary/10 transition-all" />
-            <img
-              src={demoVideoThumbnail}
-              alt="White label dating app displayed on smartphones showing profile matching and discovery features"
-              className="relative w-full h-auto rounded-2xl object-contain"
-              loading="eager" />
+          <div className="relative group rounded-2xl overflow-hidden border border-border/50 bg-black/5">
+            <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl group-hover:bg-primary/10 transition-all pointer-events-none" />
+
+            {isVideoPlaying ? (
+              <div className="relative aspect-video w-full">
+                <iframe
+                  src={YOUTUBE_EMBED_URL}
+                  title="Demo video"
+                  className="absolute inset-0 w-full h-full rounded-2xl"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setIsVideoPlaying(true)}
+                className="relative w-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 block"
+                aria-label="Play demo video"
+              >
+                <img
+                  src={demoVideoThumbnail}
+                  alt="White label dating app demo - click to play"
+                  className="relative w-full h-auto object-contain object-center rounded-2xl"
+                  loading="eager"
+                />
+              </button>
+            )}
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>);
 
 };

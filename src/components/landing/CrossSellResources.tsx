@@ -1,15 +1,13 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, ShoppingBag, MessageSquare, Layers, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
 
 const similarProducts = [
-  { icon: Users, title: "Matrimony Platform", desc: "Full-featured matrimony app with family profiles, horoscope matching, and cultural filters." },
-  { icon: MessageSquare, title: "Social Networking App", desc: "Community-driven social platforms with feeds, groups, stories, and messaging." },
-  { icon: Layers, title: "Community Apps", desc: "Private community platforms for interest groups, alumni networks, and professional circles." },
-  { icon: ShoppingBag, title: "Marketplace Platforms", desc: "Multi-vendor marketplace apps for products, services, or digital goods." },
-  { icon: Users, title: "On-Demand Services", desc: "Service marketplace apps connecting customers with providers in real-time." },
-  { icon: MessageSquare, title: "Live Streaming Platform", desc: "Interactive live streaming apps with virtual gifting, chat, and audience tools." },
+  { icon: MessageSquare, title: "Social Networking App", desc: "Community-driven social platforms with feeds, groups, stories, and messaging.", link: "https://appscrip.com/tiktok-clone/" },
+  { icon: Layers, title: "Community Apps", desc: "Private community platforms for interest groups, alumni networks, and professional circles.", link: "https://appscrip.com/onlyfans-clone/" },
+  { icon: ShoppingBag, title: "Marketplace Platforms", desc: "Multi-vendor marketplace apps for products, services, or digital goods.", link: "https://appscrip.com/multivendor-ecommerce-marketplace/"  },
+  { icon: Users, title: "On-Demand Services", desc: "Service marketplace apps connecting customers with providers in real-time.", link: "https://appscrip.com/on-demand-services-marketplace/" },
+  { icon: MessageSquare, title: "Live Streaming Platform", desc: "Interactive live streaming apps with virtual gifting, chat, and audience tools.", link: "https://appscrip.com/bigo-clone-script/" },
 ];
 
 const CrossSellResources = () => {
@@ -47,15 +45,20 @@ const CrossSellResources = () => {
             >
               {similarProducts.map((product) => (
                 <div key={product.title} className="min-w-[280px] max-w-[280px] snap-start flex-shrink-0">
-                  <div className="group p-6 rounded-2xl border border-border/50 bg-card/30 hover:border-primary/30 transition-all duration-300 h-full">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <div className="group p-6 rounded-2xl border border-border/50 bg-card/30 hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors flex-shrink-0">
                       <product.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <h3 className="font-bold mb-2 text-section-dark-foreground text-sm">{product.title}</h3>
-                    <p className="text-xs text-section-dark-foreground/45 mb-4">{product.desc}</p>
-                    <Button variant="link" className="p-0 h-auto text-primary text-xs">
+                    <h3 className="font-bold mb-2 text-section-dark-foreground text-sm flex-shrink-0">{product.title}</h3>
+                    <p className="text-xs text-section-dark-foreground/45 flex-1 min-h-0">{product.desc}</p>
+                    <a
+                      href={product.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-primary text-xs font-medium mt-4 flex-shrink-0 self-start no-underline hover:no-underline hover:opacity-80 transition-opacity"
+                    >
                       Learn More <ArrowRight className="w-3 h-3" />
-                    </Button>
+                    </a>
                   </div>
                 </div>
               ))}
