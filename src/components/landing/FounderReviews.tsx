@@ -9,27 +9,27 @@ const metrics = [
 
 const testimonials = [
   {
-    name: "James K.",
-    role: "Freight Aggregator",
+    name: "Marvin Walker.",
+    role: "Founder, Day Runner",
     country: "USA",
     flag: "🇺🇸",
-    quote: "We went from idea to live platform in under 90 days. Appscrip gave us a TMS that works exactly how our business operates.",
+    quote: "I’m thoroughly pleased with the job they did. They are highly competent, capable, and consistently exceed expectations. Their communication and app development process are seamless and easy.",
     rating: 5,
   },
   {
-    name: "Ahmed R.",
-    role: "Fleet Operator",
+    name: "Alison Koenig.",
+    role: "Founder, SalesPADDOCK",
     country: "UAE",
     flag: "🇦🇪",
-    quote: "The source code ownership was the deciding factor. Appscrip was the only one that gave us a pre-built base we could fully own.",
+    quote: "Working with Rahul was amazing—he really understood the concept of the app. The team even thought of improvements I hadn’t considered. Anyone who chooses them will have just as great an experience as I did.",
     rating: 5,
   },
   {
-    name: "Priya S.",
-    role: "Logistics Startup",
+    name: "Alexi",
+    role: "Founder, Loadsonar",
     country: "Singapore",
     flag: "🇸🇬",
-    quote: "I'm a non-tech founder. Their team understood our business first, then built the tech around it. Our driver app is a game-changer.",
+    quote: "Working with Appscrip on a cargo shipping app has been great. Their responsive team and skilled developers made the process smooth and effective. I look forward to continuing our partnership!",
     rating: 5,
   },
 ];

@@ -9,15 +9,15 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Marvin Walker",
-    role: "Founder, Day Runner",
-    text: "I’m thoroughly pleased with the job they did. They are highly competent, capable, and consistently exceed expectations. Their communication and app development process are seamless and easy.",
+    name: "Sarah Chen",
+    role: "Founder, EliteMeet",
+    text: "Moving from a SaaS dating platform to Appscrip's white-label was the best decision. Full ownership, custom features, and the ability to raise funding with our own IP. Incredible value.",
     rating: 5,
   },
   {
-    name: "Andrew",
-    role: "Founder, HunnyBee",
-    text: "Overall, it was a pleasant experience. The milestone-based payment system—paying a little upfront and during development—made me feel confident and comfortable throughout the process.",
+    name: "Michael Okafor",
+    role: "CTO, AfroConnect",
+    text: "The technical architecture is solid. We're handling 200K+ users with no performance issues. The admin panel makes moderation a breeze. Highly recommend for serious dating app builders.",
     rating: 5,
   },
 ];
