@@ -4,7 +4,7 @@ import {
   Video, Phone, Shuffle, Zap, Sparkles, ScanFace, Heart,
   Gift, MessageCircle, Rocket, Crown, ThumbsUp, EyeOff,
   Coins, Inbox, ArrowRight, UserCircle2, Calendar,
-  Shield, DollarSign
+  Shield, DollarSign, Filter, Users, KeyRound, Clock, Radio
 } from "lucide-react";
 import { useState } from "react";
 import videoProfileImg from "@/assets/images/videoprofile.png";
@@ -52,6 +52,12 @@ const features = [
     screen: { emoji: "📞", label: "HD Call", bg: "from-blue-900/80 to-cyan-900/80", image: audioVideoCallImg },
   },
   {
+    id: "call-extension", category: "video",
+    icon: Clock, title: "Call Extension",
+    desc: "The first 30 seconds of a call are free. Users can extend the call duration by spending coins, giving flexibility while boosting platform engagement.",
+    screen: { emoji: "⏱️", label: "Extend Call", bg: "from-sky-900/80 to-indigo-900/80" },
+  },
+  {
     id: "random-calling", category: "video",
     icon: Shuffle, title: "Random Calling",
     desc: "The platform allows instant connections with random people through live video or audio calls, creating a more spontaneous and engaging experience.",
@@ -88,6 +94,18 @@ const features = [
     screen: { emoji: "🚀", label: "Boost Active", bg: "from-indigo-900/80 to-blue-900/80", image: boostProfileImg },
   },
   {
+    id: "advanced-filters", category: "matching",
+    icon: Filter, title: "Advanced Filters",
+    desc: "During signup, users answer simple questions which are then used for advanced filtering. This ensures better matching based on preferences and compatibility.",
+    screen: { emoji: "🎯", label: "Advanced Filters", bg: "from-indigo-900/80 to-blue-900/80" },
+  },
+  {
+    id: "couple-profile", category: "matching",
+    icon: Users, title: "Couple Profile",
+    desc: "The platform allows couples to create a joint profile. They can connect with singles or other couples, adding diversity to user interactions.",
+    screen: { emoji: "👫", label: "Couple Profile", bg: "from-purple-900/80 to-pink-900/80" },
+  },
+  {
     id: "in-app-chat", category: "chat",
     icon: Inbox, title: "In-App Chat",
     desc: "In-app messaging enables seamless text conversations, helping users stay connected and build relationships beyond calls.",
@@ -104,6 +122,12 @@ const features = [
     icon: Gift, title: "Send Gifts and Coins",
     desc: "The app allows sending virtual gifts and coins along with personalized messages, making conversations more interactive and rewarding.",
     screen: { emoji: "🎁", label: "Send Gift", bg: "from-orange-900/80 to-amber-900/80", image: sendCoinsImg },
+  },
+  {
+    id: "social-feed", category: "chat",
+    icon: Radio, title: "Social Feed",
+    desc: "The social feed lets users follow others and view posts in a full-screen format, similar to social media. This feature adds engagement beyond swiping and matching.",
+    screen: { emoji: "📱", label: "Social Feed", bg: "from-rose-900/80 to-violet-900/80" },
   },
   {
     id: "subscription", category: "monetization",
@@ -128,6 +152,12 @@ const features = [
     icon: EyeOff, title: "Anonymity Options",
     desc: "Privacy controls such as video blur and anonymous mode allow users to interact comfortably while maintaining control over their identity.",
     screen: { emoji: "🕵️", label: "Anonymous Mode", bg: "from-slate-900/80 to-gray-900/80", image: anonymityImg },
+  },
+  {
+    id: "login-options", category: "safety",
+    icon: KeyRound, title: "Login Options",
+    desc: "Users can register or log in through multiple options such as Facebook, email, or phone number, making onboarding quick and convenient.",
+    screen: { emoji: "🔐", label: "Secure Login", bg: "from-emerald-900/80 to-teal-900/80" },
   },
 ];
 
