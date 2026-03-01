@@ -55,7 +55,7 @@ const features = [
     id: "call-extension", category: "video",
     icon: Clock, title: "Call Extension",
     desc: "The first 30 seconds of a call are free. Users can extend the call duration by spending coins, giving flexibility while boosting platform engagement.",
-    screen: { emoji: "⏱️", label: "Extend Call", bg: "from-sky-900/80 to-indigo-900/80" },
+    screen: { emoji: "⏱️", label: "Extend Call", bg: "from-sky-900/80 to-indigo-900/80", image: audioVideoCallImg },
   },
   {
     id: "random-calling", category: "video",
@@ -97,13 +97,13 @@ const features = [
     id: "advanced-filters", category: "matching",
     icon: Filter, title: "Advanced Filters",
     desc: "During signup, users answer simple questions which are then used for advanced filtering. This ensures better matching based on preferences and compatibility.",
-    screen: { emoji: "🎯", label: "Advanced Filters", bg: "from-indigo-900/80 to-blue-900/80" },
+    screen: { emoji: "🎯", label: "Advanced Filters", bg: "from-indigo-900/80 to-blue-900/80", image: inAppChatImg },
   },
   {
     id: "couple-profile", category: "matching",
     icon: Users, title: "Couple Profile",
     desc: "The platform allows couples to create a joint profile. They can connect with singles or other couples, adding diversity to user interactions.",
-    screen: { emoji: "👫", label: "Couple Profile", bg: "from-purple-900/80 to-pink-900/80" },
+    screen: { emoji: "👫", label: "Couple Profile", bg: "from-purple-900/80 to-pink-900/80", image: inAppChatImg },
   },
   {
     id: "in-app-chat", category: "chat",
@@ -127,7 +127,7 @@ const features = [
     id: "social-feed", category: "chat",
     icon: Radio, title: "Social Feed",
     desc: "The social feed lets users follow others and view posts in a full-screen format, similar to social media. This feature adds engagement beyond swiping and matching.",
-    screen: { emoji: "📱", label: "Social Feed", bg: "from-rose-900/80 to-violet-900/80" },
+    screen: { emoji: "📱", label: "Social Feed", bg: "from-rose-900/80 to-violet-900/80" , image: sendCoinsImg},
   },
   {
     id: "subscription", category: "monetization",
@@ -157,7 +157,7 @@ const features = [
     id: "login-options", category: "safety",
     icon: KeyRound, title: "Login Options",
     desc: "Users can register or log in through multiple options such as Facebook, email, or phone number, making onboarding quick and convenient.",
-    screen: { emoji: "🔐", label: "Secure Login", bg: "from-emerald-900/80 to-teal-900/80" },
+    screen: { emoji: "🔐", label: "Secure Login", bg: "from-emerald-900/80 to-teal-900/80", image: anonymityImg},
   },
 ];
 
