@@ -23,6 +23,11 @@ import subscriptionImg from "@/assets/images/subscription.png";
 import coinWalletImg from "@/assets/images/coinnwallet.png";
 import faceVerificationImg from "@/assets/images/faceverification.png";
 import anonymityImg from "@/assets/images/anonymity.png";
+import LoginImg from "@/assets/images/Login.png";
+import CoupleProfileImg from "@/components/landing/CouplesProfile.png";
+import SocialFeedImg from "@/components/landing/Social Feed.png";
+import AdvancedFiltersImg from "@/components/landing/Advanced filter.png";
+import ExtendCallImg from "@/components/landing/Extend Call.png";
 
 const categories = [
   { id: "video", label: "Video & Calls", icon: Video },
@@ -55,12 +60,12 @@ const features = [
     id: "call-extension", category: "video",
     icon: Clock, title: "Call Extension",
     desc: "The first 30 seconds of a call are free. Users can extend the call duration by spending coins, giving flexibility while boosting platform engagement.",
-    screen: { emoji: "⏱️", label: "Extend Call", bg: "from-sky-900/80 to-indigo-900/80", image: audioVideoCallImg },
+    screen: { emoji: "⏱️", label: "Extend Call", bg: "from-sky-900/80 to-indigo-900/80", image: ExtendCallImg },
   },
   {
     id: "random-calling", category: "video",
     icon: Shuffle, title: "Random Calling",
-    desc: "The platform allows instant connections with random people through live video or audio calls, creating a more spontaneous and engaging experience.",
+    desc: "Random calling connects users instantly with online members through live video or audio sessions.",
     screen: { emoji: "🎲", label: "Random Connect", bg: "from-emerald-900/80 to-teal-900/80", image: randomCallingImg },
   },
   {
@@ -97,13 +102,13 @@ const features = [
     id: "advanced-filters", category: "matching",
     icon: Filter, title: "Advanced Filters",
     desc: "During signup, users answer simple questions which are then used for advanced filtering. This ensures better matching based on preferences and compatibility.",
-    screen: { emoji: "🎯", label: "Advanced Filters", bg: "from-indigo-900/80 to-blue-900/80", image: inAppChatImg },
+    screen: { emoji: "🎯", label: "Advanced Filters", bg: "from-indigo-900/80 to-blue-900/80", image: AdvancedFiltersImg },
   },
   {
     id: "couple-profile", category: "matching",
     icon: Users, title: "Couple Profile",
     desc: "The platform allows couples to create a joint profile. They can connect with singles or other couples, adding diversity to user interactions.",
-    screen: { emoji: "👫", label: "Couple Profile", bg: "from-purple-900/80 to-pink-900/80", image: inAppChatImg },
+    screen: { emoji: "👫", label: "Couple Profile", bg: "from-purple-900/80 to-pink-900/80", image: CoupleProfileImg },
   },
   {
     id: "in-app-chat", category: "chat",
@@ -127,7 +132,7 @@ const features = [
     id: "social-feed", category: "chat",
     icon: Radio, title: "Social Feed",
     desc: "The social feed lets users follow others and view posts in a full-screen format, similar to social media. This feature adds engagement beyond swiping and matching.",
-    screen: { emoji: "📱", label: "Social Feed", bg: "from-rose-900/80 to-violet-900/80" , image: sendCoinsImg},
+    screen: { emoji: "📱", label: "Social Feed", bg: "from-rose-900/80 to-violet-900/80" , image: SocialFeedImg},
   },
   {
     id: "subscription", category: "monetization",
@@ -157,7 +162,7 @@ const features = [
     id: "login-options", category: "safety",
     icon: KeyRound, title: "Login Options",
     desc: "Users can register or log in through multiple options such as Facebook, email, or phone number, making onboarding quick and convenient.",
-    screen: { emoji: "🔐", label: "Secure Login", bg: "from-emerald-900/80 to-teal-900/80", image: anonymityImg},
+    screen: { emoji: "🔐", label: "Secure Login", bg: "from-emerald-900/80 to-teal-900/80", image: LoginImg },
   },
 ];
 
