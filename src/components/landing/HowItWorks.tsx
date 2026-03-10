@@ -8,7 +8,7 @@ const steps = [
     icon: MessageSquare,
     title: "Discovery Workshop",
     desc: "We run a focused workshop to understand your requirements, existing workflows, and scale targets. You walk away with a detailed roadmap for project execution and launch.",
-    bullets: ["Deep-dive into your operations", "Map user onboarding, matching & interaction workflows", "Define customization requirements", "Propose execution roadmap & timeline"],
+    bullets: ["Deep-dive into your operations", "Maps user onboarding, matching & interaction workflows", "Define customization requirements", "Propose execution roadmap & timeline"],
     cardTitle: "Workshop Agenda",
     cardItems: [
       { label: "Business Model & Workflows", done: true },
